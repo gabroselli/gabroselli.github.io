@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Gabriele Roselli - Web Developer</title>
+	<link rel="stylesheet" href="/stylesheets/default.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="http://yandex.st/highlightjs/5.16/styles/default.min.css">
+	<link rel="stylesheet" href="/highlight/styles/vs.css">
+	<script type="text/javascript" src="/highlight/highlight.pack.js"></script>
+	<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div id="header">
+		<div id="title"><h3><a href="http://www.gabrieleroselli.com/">Gabriele Roselli</a></h3></div>
+	</div>
+	<div id="content">
+		{{ content }}
+	</div>
+	<div id="footer">
+		<a href="mailto:gabroselli@gmail.com">gabroselli@gmail.com</a> | <a href="https://github.com/gabroselli">github</a> | <a href="http://twitter.com/#!/gabroselli">twitter</a></p>
+		<p>also at: <a href="http://supermatter.com/">supermatter</a> | <a href="http://indywinterfarmersmarket.org/">indy winter farmers market</a> | <a href="http://www.growingplacesindy.org/">growing places indy</a>
+		<p id="tweet"></p>
+		<p>Powered by <a href="https://github.com/mojombo/jekyll">jekyll</a>
+	</div>
+
+	<script type="text/javascript" src="/javascripts/twitter-1.11.2.js"></script>
+
+	<script type="text/javascript">
+	  getTwitters('tweet', { 
+	    id: 'gabroselli', 
+	    count: 1, 
+	    enableLinks: true, 
+	    clearContents: true,
+	    template: '%text%'
+	  });
+	</script>
+</body>
+</html>
