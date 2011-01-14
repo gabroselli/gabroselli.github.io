@@ -33,7 +33,7 @@ html body {
 	border-top: thin solid #999;
 }
 #footer a{
-	color:#F87217;
+	color:#ff6600;
 }
 #nav{
 	float:right;
@@ -42,6 +42,12 @@ html body {
 .date {
 	color:#666;
 	font-size:80%;
+}
+
+.rss{
+	float:right;
+	width:30px;
+	height:23px;
 }
 
 p{
