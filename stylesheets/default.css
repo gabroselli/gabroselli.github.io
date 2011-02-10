@@ -72,6 +72,7 @@ ul li {
 	height:25px;
 }
 
-#post pre code{
+#post pre {
+	padding:5px;
 	font-size:90%;
 }
