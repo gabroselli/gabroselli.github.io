@@ -76,3 +76,9 @@ ul li {
 	padding:5px;
 	font-size:90%;
 }
+
+.cursive{
+	font-family:Courier;
+	font-style:italic;
+	font-size:90%;
+}
