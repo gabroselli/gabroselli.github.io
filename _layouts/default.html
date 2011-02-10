@@ -3,20 +3,27 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Gabriele Roselli - Web Developer</title>
 	<link rel="stylesheet" href="/stylesheets/default.css" type="text/css" charset="utf-8">
-	<link rel="stylesheet" href="http://yandex.st/highlightjs/5.16/styles/default.min.css">
-	<link rel="stylesheet" href="/highlight/styles/vs.css">
-	<script type="text/javascript" src="/highlight/highlight.pack.js"></script>
-	<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+	<script src="jquery-1.4.4.min.js" type="text/javascript"></script>
+	<script src="jquery-syntax/jquery.syntax.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	    // This function is executed when the page has finished loading.
+	    jQuery(function($) {
+	        // This function highlights (by default) pre and code tags which are annotated correctly.
+	        $.syntax();
+	    });
+	</script>
+	
 </head>
 <body>
 	<div id="header">
-		<div id="title"><h3><a href="http://www.gabrieleroselli.com/">Gabriele Roselli</a></h3></div>
+		<div id="title"><h3><a href="http://gabrieleroselli.com/">Gabriele Roselli</a></h3></div>
 	</div>
 	<div id="content">
 		{{ content }}
 	</div>
 	<div id="footer">
-		<a href="mailto:gabroselli@gmail.com">gabroselli@gmail.com</a> | <a href="https://github.com/gabroselli">github</a> | <a href="http://twitter.com/#!/gabroselli">twitter</a><a href="http://feeds.feedburner.com/GabrieleRoselli"><img src="images/rss.jpg" class="rss"></a></p>
+		<a href="mailto:gabroselli@gmail.com">gabroselli@gmail.com</a> | <a href="https://github.com/gabroselli">github</a> | <a href="http://twitter.com/#!/gabroselli">twitter</a> | <a href="http://feeds.feedburner.com/GabrieleRoselli">rss feed</a></p>
 		<p>also at: <a href="http://supermatter.com/">supermatter</a> | <a href="http://indywinterfarmersmarket.org/">indy winter farmers market</a> | <a href="http://www.growingplacesindy.org/">growing places indy</a>
 		<p id="tweet"></p>
 		<p>Powered by <a href="https://github.com/mojombo/jekyll">jekyll</a>
