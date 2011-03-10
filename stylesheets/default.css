@@ -72,9 +72,10 @@ ul li {
 	height:25px;
 }
 
-#post pre {
-	padding:5px;
-	font-size:90%;
+.highlight {
+	padding:10px;
+	font-size:0.85em;
+	overflow:scroll;
 }
 
 .cursive{
