@@ -16,6 +16,11 @@ html body {
 	color: #666;
 }
 
+#header #title a {
+  	color: #CC3300;
+  	text-decoration: none;
+}
+
 #content {
 	width:600px;
 	margin: 0 auto;
@@ -33,11 +38,15 @@ html body {
 	border-top: thin solid #999;
 }
 #footer a{
-	color:#ff6600;
+	color:#CC3300;
 }
 #nav{
 	float:right;
 	width:150px;
+}
+
+#post a{
+	color:#CC3300;
 }
 .date {
 	color:#666;
@@ -58,7 +67,7 @@ a img {
 }
 
 a {
-  	color: #008B00;
+  	color: #669966;
   	text-decoration: none;
 }
 
