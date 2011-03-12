@@ -10,7 +10,7 @@ I pretty much exhausted the internet recently looking for articles about it, and
 The UTC* offset is without a doubt the one indispensable thing when dealing with time zone calculations, and more specifically the UTC offset expressed in hours. For those not familiar with the concept, the UTC offset is the time offset of a specific time zone from the UTC. In my case I first derived the latitude and longitude from the user's address using the [geokit-rails3](https://github.com/jlecour/geokit-rails3) gem, then I used [earthtools.org](http://www.earthtools.org/webservices.htm) to get the <span class="cursive">utc_offset</span>. I then saved it in the user table.
 
 In the user model:
-{% highlight ruby %}
+{% highlight ruby linenos=inline%}
 class User < ActiveRecord::Base
   def utc_offset
     location = "#{self.address}, #{self.city} #{self.state} #{self.zip}"
@@ -37,7 +37,7 @@ Finally, since we are using the <span class="cursive">DateTime</span> new_offset
 
 The "localization" happens like so:
 
-{% highlight ruby %}
+{% highlight ruby linenos=inline%}
 t = User.find(n).date
 offset = Rational(user.utc_offset,24)
 localize_datetime = t.new_offset(offset)

@@ -48,6 +48,7 @@ html body {
 #post a{
 	color:#CC3300;
 }
+
 .date {
 	color:#666;
 	font-size:80%;
@@ -82,9 +83,9 @@ ul li {
 }
 
 .highlight {
-	padding:10px;
+	padding: 0 0 0 5px;
 	font-size:0.85em;
-	overflow:scroll;
+	overflow-x:scroll;
 }
 
 .cursive{
