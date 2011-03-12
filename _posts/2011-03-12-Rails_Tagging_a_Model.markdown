@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rails - Tagging a Model
+title: Rails - Tagging a Model.
 ---
 Tagging is a very simple concept. Wikipedia describes a tag as "a non-hierarchical keyword or term assigned to a piece of information".
 
