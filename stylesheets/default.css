@@ -15,7 +15,6 @@ html body {
 .nav {
 	width:27%;
 	float:right;
-	padding-top:1.5em;
 }
 
 .nav a{
@@ -25,6 +24,8 @@ html body {
 .footer{
 	clear:both;
 	padding-bottom:0.8em;
+	font-size:0.9em;
+	color:#666;
 }
 
 .footer a{
@@ -62,6 +63,10 @@ html body {
 	height:23px;
 }
 
+h1, h2, h3 {
+	color:#666;
+}
+
 p{
 	line-height:1.5em;
 }
@@ -78,10 +83,7 @@ ul {
 	margin-left: 0;
 	padding-left: 0;
 	list-style:none;
-}
-
-ul li {
-	height:25px;
+	line-height:1.5em;
 }
 
 .highlight {
