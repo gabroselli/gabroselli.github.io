@@ -1,2 +1,2 @@
-Personal Blog
+Personal Site
 ---
