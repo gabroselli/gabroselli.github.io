@@ -32,22 +32,6 @@ html body {
 	color:#CC3300;
 }
 
-#header {
-	margin: 0 auto;
-	text-align:left;
-	font-size:1.7em;
-	text-shadow:1px 1px 2px #333333;
-}
-
-#header #title {
-	color: #666;
-}
-
-#header #title a {
-  	color: #CC3300;
-  	text-decoration: none;
-}
-
 #post a{
 	color:#CC3300;
 }
