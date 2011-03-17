@@ -63,6 +63,10 @@ html body {
 	height:23px;
 }
 
+.red {
+	color:#CC3300;
+}
+
 h1, h2, h3 {
 	color:#666;
 }
