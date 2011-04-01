@@ -32,13 +32,14 @@ html body {
 	color:#CC3300;
 }
 
-.lilnav{
-	font-size:80%;
-	color:#CC3300;
+a:hover {
+	color:4183C4;
+	text-decoration:underline;
 }
 
-#post a{
+a {
 	color:#CC3300;
+	text-decoration:none;
 }
 
 .date {
@@ -56,6 +57,10 @@ html body {
 	color:#CC3300;
 }
 
+.black {
+	color:#000;
+}
+
 h1, h2, h3 {
 	color:#666;
 }
@@ -65,11 +70,6 @@ p{
 }
 a img {
 	border: none;
-}
-
-a {
-  	color: #4183C4;
-  	text-decoration: none;
 }
 
 ul {
@@ -89,4 +89,10 @@ ul {
 	font-family:Courier;
 	font-style:italic;
 	font-size:90%;
+}
+
+hr {
+	height:1px;
+	background-color:#666;
+	color:#666;
 }
