@@ -42,6 +42,11 @@ a {
 	text-decoration:none;
 }
 
+.name {
+	float:left;
+	clear:both;
+}
+
 .date {
 	color:#666;
 	font-size:80%;
