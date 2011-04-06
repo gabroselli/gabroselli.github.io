@@ -5,6 +5,7 @@ html body {
 	padding-top:0;
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
+	background:url('/images/square.png');
 }
 
 .content {
