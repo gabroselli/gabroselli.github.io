@@ -84,6 +84,10 @@ ul {
 	line-height:1.5em;
 }
 
+.archive ul {
+	line-height:1em;
+}
+
 .highlight {
 	padding: 0 0 0 5px;
 	font-size:0.85em;
