@@ -9,8 +9,11 @@ html body {
 }
 
 .content {
-	width:65%;
+	width:63%;
 	float:left;
+	padding:2%;
+	background:#fff;
+	border: thin solid #999;
 }
 
 .nav {
