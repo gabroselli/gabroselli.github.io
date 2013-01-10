@@ -27,12 +27,14 @@ a:hover {
 	text-shadow: 4px 4px 4px #000;
 	float: left;
 	margin-top: 50px;
+	padding-left: 25px;
 }
 
 #about {
 	width: 300px;
 	margin-top: 50px;
   float: right;
+	padding-right: 58px;
 }
 
 .lastname{ 
