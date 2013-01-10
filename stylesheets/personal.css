@@ -31,6 +31,7 @@ a:hover {
 
 #about {
 	width: 360px;
+	padding-right: 10px;
 	margin: 50px 0 0 0;
   float: right;
 }
