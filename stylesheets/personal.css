@@ -3,11 +3,11 @@
 }
 
 p { 
-	color: #fff; font-family: Helvetica;
+	color: #838B8B; font-family: Helvetica;
 	font-size: 1.2em;
 	line-height: 24px; margin-bottom: 22px; 
 	-webkit-font-smoothing: antialiased; 
-	text-shadow: 4px 4px 4px #333333;
+	text-shadow: 4px 4px 4px #E0EEEE;
 }
 
 a { 
