@@ -3,7 +3,7 @@
 }
 
 p { 
-	color: #838B8B; font-family: Helvetica;
+	color: #444; font-family: Calibri;
 	font-size: 1.2em;
 	line-height: 24px; margin-bottom: 22px; 
 	-webkit-font-smoothing: antialiased; 
@@ -23,7 +23,7 @@ a:hover {
 #monogram { 
 	font-size:200%;
 	font-family: Arial, Helvetica, sans-serif;
-	color:white;
+	color:#444;
 	text-shadow: 4px 4px 4px #000;
 	float: left;
 	margin-top: 5%;
