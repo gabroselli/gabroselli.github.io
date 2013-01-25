@@ -47,8 +47,8 @@ a:hover {
 }
 
 .box{ 
-	padding:10px; background-color: #DDD; 
-	filter:alpha(opacity=80);
+	padding:10px; background-color: #FFF; 
+	filter:alpha(opacity=70);
 	opacity:.8;
 	-webkit-box-shadow: 5px 5px 10px #000;
 	-moz-box-shadow: 5px 5px 10px #000;
