@@ -30,8 +30,7 @@ a:hover {
 	text-shadow: 4px 4px 4px #000;
 	float: right;
 	margin-top: 5%;
-	padding-right: 40px;
-	clear: both;
+	padding-right: 8%;
 }
 
 #about {
@@ -39,6 +38,7 @@ a:hover {
 	margin-top: 5%;
   float: right;
 	padding-right: 8%;
+	clear: both;
 }
 
 .lastname{ 
