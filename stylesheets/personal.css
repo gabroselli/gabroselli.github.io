@@ -71,9 +71,11 @@ width:430px;
 background:#fff;
 margin:-35px 70px 0 auto;
 padding:25px;
-opacity:0.4;
-filter:alpha(opacity=40); /* For IE8 and earlier */
+opacity:0.75;
+filter:alpha(opacity=75); /* For IE8 and earlier */
+}
 
+#about p{
 }
 
 .rgba #about {
