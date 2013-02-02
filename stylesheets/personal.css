@@ -1,90 +1,128 @@
-* { 
-	padding: 0; margin: 0; 
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+border:0;
+font-size:100%;
+font:inherit;
+vertical-align:baseline;
+margin:0;
+padding:0;
 }
 
-p { 
-	color: #444; 
-	font-family: Calibri, sans-serif;
-	font-size: 16px;
-	line-height: 24px; margin-bottom: 22px; 
-	-webkit-font-smoothing: antialiased; 
-	text-shadow: 4px 4px 4px #E0EEEE;
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+display:block;
 }
 
-a { 
-	color:#F7971C;
-	font-size: 110%;
+body {
+color:#333;
+font-family: 'Calibri',sans-serif;
+font-size:16px;
+line-height:1.8;
+-webkit-font-smoothing:antialiased;
 }
 
-a:hover { 
-	color: #DDD;
-	text-decoration:none; 
+ol,ul {
+list-style:none;
 }
 
-#monogram { 
-	/*border-left-width:5px;
-	border-left-color:#F7971C;
-	border-left-style:solid;*/
-	font-size:200%;
-	font-family: Calibri, sans-serif;
-	color:white;
-	float:left;
-	text-shadow: 4px 4px 4px #000;
-	margin-top: 10px;
-	margin-left:10px;
-/*padding-left: 40px;*/
-	}
-
-	#about {
-		width: 400px;
-		float: right;
-		margin: 10px;
+blockquote,q {
+quotes:none;
 }
 
-.lastname{ 
-	color:#F7971C;
+blockquote:before,blockquote:after,q:before,q:after {
+content:none;
 }
 
-#monogram a{
-	color:white;
-	text-colordecoration:none;
+table {
+border-collapse:collapse;
+border-spacing:0;
 }
 
-.box{ 
-	padding:10px; background-color: #FFF; 
-	filter:alpha(opacity=70);
-	opacity:.8;
-	-webkit-box-shadow: 5px 5px 10px #000;
-	-moz-box-shadow: 5px 5px 10px #000;
-	box-shadow: 5px 5px 10px #000;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+p {
+margin-bottom:22px;
 }
-@media screen and max-width800px,screen and max-device-width480px{
-	#monogram {
-		text-align:center;
-		border-right:5px solid #F7971C;
-		padding-left:2px;
-		margin:40px auto;
+
+a {
+color:#F7971C;
+font-weight:700;
+text-decoration:none;
+border-bottom:1px solid rgba(0,0,0,0.3);
+}
+
+a:hover {
+color:#CCC;
+border-bottom:1px solid rgba(0,0,0,0.3);
+}
+
+header {
+color:#F7971C;
+border-left:10px solid #bf6d50;
+height:27px;
+line-height:27px;
+margin:40px auto 0 50px;
+padding:0 5px;
+}
+
+.rgba header h1 {
+text-shadow:0 0 2px rgba(251,244,231,0.7);
 }
 
 #about {
-	margin:0 auto;
-	width:100%;
+width:430px;
+background:#fff;
+margin:-35px 70px 0 auto;
+padding:25px;
+}
+
+.rgba #about {
+background:rgba(251,244,231,0.7);
+}
+
+h1,h2 {
+font-family: 'Calibri',sans-serif;
+font-size: 28px;
+font-weight:100;
+}
+
+h1 {
+color:#CCC;
+cursor:default;
+-webkit-user-select:none;
+-moz-user-select:none;
+user-select:none;
+}
+
+#about h2 {
+margin-bottom:10px;
+}
+
+.csstransitions a,.csstransitions header {
+transition:all .15s linear;
+-o-transition:all .15s linear;
+-moz-transition:all .15s linear;
+-webkit-transition:all .15s linear;
+}
+
+@media screen and max-width800px,screen and max-device-width480px{
+header {
+text-align:center;
+border-right:5px solid #F7971C;
+margin:40px auto;
+}
+
+#about {
+margin:0 auto;
 }
 }
 
 @media only screen and max-device-width480px{
-	#monogram {
-		width:480px;
+header {
+width:480px;
 }
 
-#monogram h2{
-	font-size:40px;
+header h1 {
+font-size:40px;
 }
 
 #about {
-	width:100%;
+width:460px;
 }
 }
