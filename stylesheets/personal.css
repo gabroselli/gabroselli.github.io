@@ -21,25 +21,13 @@ a:hover {
 	text-decoration:none; 
 }
 
-#monogram { 
-	border-right-width:2px;
-	border-right-color:#F7971C;
-	border-right-style:solid;
-	font-size:200%;
-	font-family: Calibri, sans-serif;
-	color:white;
-	text-shadow: 4px 4px 4px #000;
-	float: right;
-	margin-top: 5%;
-	padding-right: 8%;
-}
-
 #about {
 	width: 300px;
 	margin-top: 5%;
   float: right;
 	padding-right: 8%;
 	clear: both;
+	margin-right: 40px;
 }
 
 #about h2{
