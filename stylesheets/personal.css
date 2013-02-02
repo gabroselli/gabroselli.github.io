@@ -58,7 +58,6 @@ color:#333
 
 header {
 color:#F7971C;
-border-left:5px solid #F7971C;
 height:27px;
 line-height:27px;
 margin:40px auto 0 50px;
@@ -84,14 +83,6 @@ filter:alpha(opacity=75); /* For IE8 and earlier */
 
 .rgba #about {
 background:rgba(251,244,231,0.7);
-}
-
-h1 {
-color:#CCC;
-cursor:default;
--webkit-user-select:none;
--moz-user-select:none;
-user-select:none;
 }
 
 #about h2 {
