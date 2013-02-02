@@ -64,7 +64,6 @@ margin:40px auto 0 50px;
 padding:0 5px;
 font-size:200%;
 text-align:center;
-border-right:5px solid #F7971C;
 margin:40px auto;
 
 }
@@ -74,7 +73,7 @@ text-shadow:0 0 2px rgba(251,244,231,0.7);
 }
 
 #about {
-width:400px;
+width:300px;
 background:#fff;
 margin:-20px 70px 0 auto;
 padding:25px;
