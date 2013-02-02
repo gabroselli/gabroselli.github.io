@@ -22,9 +22,9 @@ a:hover {
 }
 
 #monogram { 
-	border-left-width:5px;
+	/*border-left-width:5px;
 	border-left-color:#F7971C;
-	border-left-style:solid;
+	border-left-style:solid;*/
 	font-size:200%;
 	font-family: Calibri, sans-serif;
 	color:white;
