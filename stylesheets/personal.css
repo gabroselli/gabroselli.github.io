@@ -28,6 +28,7 @@ a:hover {
 	font-size:200%;
 	font-family: Arial, Helvetica, sans-serif;
 	color:white;
+	float:left;
 	text-shadow: 4px 4px 4px #000;
 			float: right;
 			margin-top: 5%;
@@ -39,15 +40,7 @@ a:hover {
 	margin-top: 5%;
   float: right;
 	padding-right: 8%;
-	clear: both;
 	padding-left:40px;
-}
-
-#about h2{
-	color:#F7971C;
-	font-family: Calibri, sans-serif;
-	padding-bottom: 1em;
-	text-transform:uppercase;
 }
 
 .lastname{ 
@@ -73,7 +66,7 @@ a:hover {
 @media screen and max-width800px,screen and max-device-width480px{
   #monogram {
 		text-align:center;
-		border-right:10px solid #bf6d50;
+		border-right:10px solid #F7971C;
 		margin:40px auto;
 	}
 
