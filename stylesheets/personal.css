@@ -23,24 +23,23 @@ a:hover {
 
 #monogram { 
 	border-left-width:2px;
-	border-left-color:#rightF7971C;
+	border-right-color:#F7971C;
 	border-left-style:solid;
 	font-size:200%;
-	font-family: Calibri, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	color:white;
 	float:left;
 	text-shadow: 4px 4px 4px #000;
-			float: right;
-			margin-top: 5%;
-			padding-right: 40px;
-		}
-		
-#about {
-	width: 300px;
 	margin-top: 5%;
-  float: right;
-	padding-right: 8%;
-	padding-left:40px;
+	padding-right: 40px;
+	}
+
+	#about {
+		width: 300px;
+		margin-top: 5%;
+		float: right;
+		padding-right: 8%;
+		padding-left:40px;
 }
 
 .lastname{ 
@@ -64,27 +63,27 @@ a:hover {
 	border-radius: 10px;
 }
 @media screen and max-width800px,screen and max-device-width480px{
-  #monogram {
+	#monogram {
 		text-align:center;
 		border-right:10px solid #F7971C;
 		margin:40px auto;
-	}
+}
 
-	#about {
-		margin:0 auto;
-	}
+#about {
+	margin:0 auto;
+}
 }
 
 @media only screen and max-device-width480px{
 	#monogram {
 		width:480px;
-	}
+}
 
-	#monogram h2{
-		font-size:40px;
-	}
+#monogram h2{
+	font-size:40px;
+}
 
-	#about {
-		width:460px;
-	}
+#about {
+	width:460px;
+}
 }
