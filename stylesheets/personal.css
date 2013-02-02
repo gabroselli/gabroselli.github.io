@@ -1,1 +1,139 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body{color:#333;font-family:'Helvetica Neue',Helvetica,sans-serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}p{margin-bottom:22px}a{color:#000;font-weight:bold;text-decoration:none;border-bottom:1px solid rgba(0,0,0,0.3)}a:hover{color:#bf6d50;border-bottom:1px solid rgba(0,0,0,0.3)}.csstransitions a{transition:all .15s linear;-o-transition:all .15s linear;-moz-transition:all .15s linear;-webkit-transition:all .15s linear}header{padding:0 5px;margin:40px auto 0 50px;color:rgba(0,0,0,1);border-left:10px solid #bf6d50;height:27px;line-height:27px}.csstransitions header{transition:all .15s linear;-o-transition:all .15s linear;-moz-transition:all .15s linear;-webkit-transition:all .15s linear}.rgba header h1{text-shadow:0 0 2px rgba(251,244,231,0.7)}#about{width:430px;padding:25px;margin:-35px 70px 0 auto;background:#fbf4e7}.rgba #about{background:rgba(251,244,231,0.7)}h1,h2{font:28px 'Rockwell Std','Rockwell','Courier New',Courier,serif;font-weight:100}h1{color:#392f2a;cursor:default;-webkit-user-select:none;-moz-user-select:none;user-select:none}#about h2{margin-bottom:10px}.footnotes{margin:20px 0 0;padding:10px 0;border-top:1px dotted #333;font-style:italic;font-size:.8em}.footnotes p{margin-bottom:0}@media screen and (max-width:800px),screen and (max-device-width:480px){header{margin:40px auto;text-align:center;border-right:10px solid #bf6d50}#about{margin:0 auto}}@media only screen and (max-device-width:480px){header{width:480px}header h1{font-size:40px}#about{width:460px}}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+	margin:0;
+	padding:0;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+
+body {
+	color:#333;
+	font-family:'Helvetica Neue',Helvetica,sans-serif;
+	font-size:16px;
+	line-height:1.8;
+	-webkit-font-smoothing:antialiased;
+}
+
+ol,ul {
+	list-style:none;
+}
+
+blockquote,q {
+	quotes:none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content:none;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+p {
+	margin-bottom:22px;
+}
+
+a {
+	color:#000;
+	font-weight:700;
+	text-decoration:none;
+	border-bottom:1px solid rgba(0,0,0,0.3);
+}
+
+a:hover {
+	color:#bf6d50;
+	border-bottom:1px solid rgba(0,0,0,0.3);
+}
+
+header {
+	color:rgba(0,0,0,1);
+	border-left:10px solid #bf6d50;
+	height:27px;
+	line-height:27px;
+	margin:40px auto 0 50px;
+	padding:0 5px;
+}
+
+.rgba header h1 {
+	text-shadow:0 0 2px rgba(251,244,231,0.7);
+}
+
+#about {
+	width:430px;
+	background:#fff;
+	margin:-35px 70px 0 auto;
+	padding:25px;
+}
+
+.rgba #about {
+	background:rgba(251,244,231,0.7);
+}
+
+h1,h2 {
+	font:28px 'Rockwell Std',Rockwell,'Courier New',Courier,serif;
+	font-weight:100;
+}
+
+h1 {
+	color:#392f2a;
+	cursor:default;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	user-select:none;
+}
+
+#about h2 {
+	margin-bottom:10px;
+}
+
+.footnotes {
+	border-top:1px dotted #333;
+	font-style:italic;
+	font-size:.8em;
+	margin:20px 0 0;
+	padding:10px 0;
+}
+
+.footnotes p {
+	margin-bottom:0;
+}
+
+.csstransitions a,.csstransitions header {
+	transition:all .15s linear;
+	-o-transition:all .15s linear;
+	-moz-transition:all .15s linear;
+	-webkit-transition:all .15s linear;
+}
+
+@media screen and max-width800px,screen and max-device-width480px{
+	header {
+		text-align:center;
+		border-right:10px solid #bf6d50;
+		margin:40px auto;
+	}
+
+	#about {
+		margin:0 auto;
+	}
+}
+
+@media only screen and max-device-width480px{
+	header {
+		width:480px;
+	}
+
+	header h1 {
+		font-size:40px;
+	}
+
+	#about {
+		width:460px;
+	}
+}
