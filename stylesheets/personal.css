@@ -66,6 +66,7 @@ a:hover {
 	#monogram {
 		text-align:center;
 		border-right:5px solid #F7971C;
+		padding-left:40px;
 		margin:40px auto;
 }
 
