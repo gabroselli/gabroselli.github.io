@@ -41,6 +41,13 @@ a:hover {
 	clear: both;
 }
 
+#about h2{
+	color:#F7971C;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 4px 4px 4px #000;
+	padding-bottom: 2em;
+}
+
 .lastname{ 
 	color:#F7971C;
 }
