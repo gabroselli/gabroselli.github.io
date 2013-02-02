@@ -22,8 +22,8 @@ a:hover {
 }
 
 #monogram { 
-	border-left-width:2px;
-	border-right-color:#F7971C;
+	border-left-width:5px;
+	border-left-color:#F7971C;
 	border-left-style:solid;
 	font-size:200%;
 	font-family: Arial, Helvetica, sans-serif;
@@ -31,7 +31,7 @@ a:hover {
 	float:left;
 	text-shadow: 4px 4px 4px #000;
 	margin-top: 5%;
-	padding-right: 40px;
+	padding-left: 40px;
 	}
 
 	#about {
@@ -65,7 +65,7 @@ a:hover {
 @media screen and max-width800px,screen and max-device-width480px{
 	#monogram {
 		text-align:center;
-		border-right:10px solid #F7971C;
+		border-right:5px solid #F7971C;
 		margin:40px auto;
 }
 
