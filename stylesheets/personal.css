@@ -36,10 +36,8 @@ a:hover {
 
 	#about {
 		width: 300px;
-		margin-top: 5%;
 		float: right;
-		padding-right: 8%;
-		padding-left:40px;
+		margin:10px 10px 0 auto
 }
 
 .lastname{ 
@@ -71,7 +69,8 @@ a:hover {
 }
 
 #about {
-	margin:40px auto;
+	margin:0 auto;
+	width:400px;
 }
 }
 
