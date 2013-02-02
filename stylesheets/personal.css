@@ -30,8 +30,9 @@ a:hover {
 	color:white;
 	float:left;
 	text-shadow: 4px 4px 4px #000;
-	margin-top: 5%;
-	padding-left: 40px;
+	margin-top: 10px;
+	margin-left:10px;
+/*padding-left: 40px;*/
 	}
 
 	#about {
