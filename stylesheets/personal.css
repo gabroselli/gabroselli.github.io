@@ -41,7 +41,7 @@ margin-bottom:22px;
 }
 
 a {
-color:#F7971C;
+color:#009DDC;
 font-weight:700;
 text-decoration:none;
 border-bottom:1px solid rgba(0,0,0,0.3);
@@ -57,7 +57,7 @@ color:#333
 }
 
 header {
-color:#F7971C;
+color:#009DDC;
 height:27px;
 line-height:27px;
 margin:40px auto 0 50px;
@@ -65,7 +65,6 @@ padding:0 5px;
 font-size:200%;
 text-align:center;
 margin:40px auto;
-
 }
 
 .rgba header h1 {
