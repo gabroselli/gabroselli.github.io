@@ -11,7 +11,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
 }
 
-/* Modernized CSS */
 :root {
   --primary-color: #009DDC;
   --text-color: #333;
@@ -33,7 +32,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Ensures the image stays in place while scrolling */
+  background-attachment: fixed;
 }
 
 ol,ul {
@@ -81,6 +80,7 @@ header {
   padding: 0 5px;
   font-size: 200%;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .rgba header h1 {
@@ -89,12 +89,10 @@ header {
 
 #about {
   width: 380px;
-  background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
-  margin: -10px 85px 0 auto;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 40px auto 0 auto;
   padding: 45px;
-}
-
-#about p{
+  margin-top: 40px;
 }
 
 .rgba #about {
@@ -110,7 +108,7 @@ margin-bottom:10px;
 }
 
 #social a img {
-  width: 48px; /* Ensure proper size */
+  width: 48px;
   height: 48px;
 }
 
@@ -120,11 +118,13 @@ margin-bottom:10px;
 
 @media (max-width: 800px), (max-device-width: 480px) {
   header {
-    margin: 0 auto;
+    margin: 20px auto !important;
+    margin-bottom: 20px;
   }
 
   #about {
-    margin: 0 auto;
+    margin: 20px auto;
+    margin-top: 20px;
   }
 }
 
