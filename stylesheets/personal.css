@@ -90,9 +90,10 @@ header {
 #about {
   width: 380px;
   background: rgba(255, 255, 255, 0.7);
-  margin: 40px auto 0 auto;
+  margin: 40px 20px 0 auto;
   padding: 45px;
   margin-top: 40px;
+  float: right;
 }
 
 .rgba #about {
@@ -125,6 +126,7 @@ margin-bottom:10px;
   #about {
     margin: 20px auto;
     margin-top: 20px;
+    float: none;
   }
 }
 
