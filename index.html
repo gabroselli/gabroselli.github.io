@@ -1,17 +1,13 @@
 <!doctype html>
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
 <title>Gabriele Roselli | Principal Software Engineer</title>
-<!--	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />-->
-<meta http-equiv="pragma" content="no-cache" />
-<meta name="robots" content="all" />
-<meta name="MSSmartTagsPreventParsing" content="true" />
-<meta http-equiv="imagetoolbar" content="false" />	
-<meta name="viewport" content="width=device-width">	
-<link rel="stylesheet" href="/stylesheets/personal.css" type="text/css" media="screen" title="no title" charset="utf-8">
-<script type="text/javascript" src="/javascripts/modernizr-1.7.min.js"></script>		
-</head>	
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="all">
+<link rel="stylesheet" href="/stylesheets/personal.css" type="text/css" media="screen">
+</head>
 
 <body>
 <header>
@@ -22,15 +18,19 @@
 
   <p>I like simple solutions to complex problems.</p>
   <section id="social">
-    <a href="https://www.linkedin.com/in/gabroselli" target="_blank"><img src="/images/social_media_icons/PNG%2048x48/48X48_Linkedin.png"></a>
+    <a href="https://www.linkedin.com/in/gabroselli" target="_blank">
+      <img src="/images/social_media_icons/48X48_linkedin.png" alt="LinkedIn">
+    </a>
   </section>
 </section>
 
-<!--include jquery & backstretch-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="/javascripts/jquery.backstretch.min.js"></script>
-<script type="text/javascript">
-$.backstretch("images/gr_bw.jpg", {speed: 150});
+<!-- Include modern jQuery and remove outdated plugins -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  // Custom backstretch functionality using modern CSS or JavaScript
+  document.body.style.backgroundImage = "url('images/gr_bw.jpg')";
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundPosition = "center";
 </script>
-</body>	
+</body>
 </html>
