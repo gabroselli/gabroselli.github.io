@@ -29,9 +29,9 @@ body {
   font-size: var(--base-font-size);
   line-height: var(--line-height);
   -webkit-font-smoothing: antialiased;
-  background-image: url('/images/gr_bw.jpg');
+  background-image: url('../images/gr_bw.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Ensures the image stays in place while scrolling */
 }
