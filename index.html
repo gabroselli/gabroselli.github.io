@@ -1,29 +1,141 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Gabriele Roselli | Principal Software Engineer</title>
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="all">
-<link rel="stylesheet" href="/stylesheets/personal.css" type="text/css" media="screen">
+  <meta charset="UTF-8">
+  <title>Gabriele Roselli</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="all">
+  <meta name="description" content="Gabriele Roselli, Staff Engineer at SimplePractice. Building infrastructure, keeping things secure, and shipping software that scales.">
+  <link rel="stylesheet" href="/stylesheets/cv.css" type="text/css">
 </head>
 
 <body>
-<header>
-  <h1><span class="firstname">Gabriele</span> Roselli</h1>
-</header>
-<section id="about">
-  <p>I am a Principal Software Engineer based in Indianapolis delivering high quality software and services at each stage of the development process from architectural design, to choice of infrastructure and data stores, to deployment of test driven applications from staging to production environments.</p>
+<div class="page">
 
-  <p>I like simple solutions to complex problems.</p>
-  <section id="social">
-    <a href="https://www.linkedin.com/in/gabroselli" target="_blank">
-      <img src="/images/social/linkedin.png" alt="LinkedIn">
-    </a>
-  </section>
-</section>
+  <div class="hero">
+    <div class="hero-photo">
+      <img src="/images/gr_bw.jpg" alt="Gabriele Roselli">
+    </div>
+    <div class="hero-text">
+      <h1><span class="first">Gabriele</span> Roselli<span class="cursor"></span></h1>
+      <p class="title">Staff Engineer at SimplePractice · based in Indianapolis, IN</p>
+      <p>I approach engineering with a focus on simplicity, reliability, and security.</p>
+      <p>The best solution is usually the simplest one.</p>
+      <p>I find as much satisfaction in leading a team through a difficult project as I do in solving a hard technical problem.</p>
+    </div>
+  </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <div class="content">
+
+  <div class="section reveal">
+    <h2>background</h2>
+    <p>Currently at SimplePractice as a Staff Engineer in the Revenue Cycle Management space.</p>
+    <p>Before that, I spent 12 years at Salesforce, where I worked across engineering and infrastructure teams operating at significant scale.</p>
+    <p>I started as a full-stack engineer, building Ruby on Rails applications and getting comfortable across the whole web stack. Over time I gravitated toward the backend and infrastructure, working on recommendation engines, analytics systems, and the operational layers that kept them running reliably at scale.</p>
+    <p>That trajectory pulled me naturally into infrastructure and platform engineering, where the problems are broader and the impact compounds across every team that builds on top of what you ship. Having worked deeply on both the product and platform sides, I'm equally comfortable partnering with Product on customer-facing features as I am designing the systems that make those features possible.</p>
+  </div>
+
+  <div class="section reveal">
+    <h2>what i do</h2>
+    <p><strong>Software Engineering.</strong> I partner closely with Product to understand customer needs and translate them into reliable, well-crafted software. My focus is on shipping features that make a meaningful difference in the customer experience.</p>
+    <p><strong>Platform Engineering.</strong> I build and maintain the foundational systems other engineers depend on, including cloud infrastructure, deployment pipelines, and internal tooling that keeps teams moving independently.</p>
+    <p><strong>Security &amp; Trust.</strong> I treat security as a design constraint, not an afterthought. From compliance certifications to service hardening and incident response, I work to make security a shared engineering responsibility rather than a gatekeeping function.</p>
+    <p><strong>Technical Leadership.</strong> I operate across the individual contributor and leadership spectrum, guiding architectural decisions, mentoring teams, and advocating for simplicity when complexity starts to accumulate for its own sake.</p>
+  </div>
+
+  <div class="section reveal">
+    <h2>patents</h2>
+    <div class="highlights">
+      <div class="highlight">
+        <span class="highlight-label">&gt;</span>
+        <p><a href="https://patents.google.com/patent/US10887281B2" target="_blank" rel="noopener">US10887281B2</a>: Automated Host-Based Firewall Configuration Management. Filed Dec 2017, issued Jan 2021.</p>
+      </div>
+      <div class="highlight">
+        <span class="highlight-label">&gt;</span>
+        <p><a href="https://patents.google.com/patent/US12192081B2/" target="_blank" rel="noopener">US12192081B2</a>: De-Centralized High Risk Actions on Coordinated Computer Systems. Filed Jan 2023, issued Jan 2025.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section reveal">
+    <h2>get in touch</h2>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/gabroselli" target="_blank" rel="noopener">
+        <img src="/images/social/linkedin.png" alt="">
+        linkedin.com/in/gabroselli
+      </a>
+      <a href="https://github.com/gabroselli" target="_blank" rel="noopener">
+        <img src="/images/social/github.svg" alt="">
+        github.com/gabroselli
+      </a>
+    </div>
+  </div>
+
+  </div><!-- .content -->
+
+</div>
+<script>
+  // Typing animation for hero bio paragraphs
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const paras = Array.from(document.querySelectorAll('.hero-text p'));
+    const texts = paras.map(p => p.textContent.trim());
+
+    paras.forEach(p => {
+      p.style.animation = 'none';
+      p.style.opacity = '0';
+    });
+
+    let paraIndex = 0;
+    let charIndex = 0;
+
+    function type() {
+      if (paraIndex >= paras.length) return;
+      const para = paras[paraIndex];
+      const text = texts[paraIndex];
+
+      if (charIndex === 0) {
+        para.textContent = '';
+        para.style.opacity = '1';
+      }
+
+      if (charIndex < text.length) {
+        para.textContent = text.slice(0, charIndex + 1);
+        charIndex++;
+        setTimeout(type, 22);
+      } else {
+        paraIndex++;
+        charIndex = 0;
+        setTimeout(type, 300);
+      }
+    }
+
+    setTimeout(type, 900);
+  })();
+
+  const highlightsMap = new Map();
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      el.classList.add('visible');
+      highlightsMap.get(el)?.forEach((child, i) => {
+        child.style.transitionDelay = `${i * 0.1}s`;
+        child.classList.add('visible');
+      });
+      observer.unobserve(el);
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => {
+    const highlights = Array.from(el.querySelectorAll('.highlight'));
+    highlights.forEach(h => h.classList.add('reveal'));
+    highlightsMap.set(el, highlights);
+    observer.observe(el);
+  });
+</script>
 </body>
 </html>

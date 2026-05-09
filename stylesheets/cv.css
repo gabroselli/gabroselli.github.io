@@ -1,0 +1,349 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #0369a1;
+  --primary-glow: rgba(3, 105, 161, 0.08);
+  --primary-hover-bg: rgba(3, 105, 161, 0.05);
+  --primary-hover-border: rgba(3, 105, 161, 0.2);
+  --primary-link-border: rgba(3, 105, 161, 0.3);
+  --text: #1e293b;
+  --text-emphasis: #0c111d;
+  --muted: #94a3b8;
+  --subtle: #64748b;
+  --border: #e5dfd6;
+  --bg: #f7f4ef;
+  --surface: #ffffff;
+  --comment: #64748b;
+  --mono: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  background-image: radial-gradient(rgba(0,0,0,0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 80px 40px 96px;
+  display: flex;
+  gap: 72px;
+  align-items: flex-start;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 280px;
+  position: sticky;
+  top: 48px;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+  align-self: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--primary);
+  box-shadow: 0 0 0 4px var(--primary-glow), 0 0 24px var(--primary-glow);
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.hero-text {
+  padding-top: 0;
+}
+
+.hero-text h1,
+.hero-text .title,
+.section h2,
+.highlight-label,
+.contact-links a {
+  font-family: var(--mono);
+}
+
+.hero-text h1 {
+  font-size: 1.65rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.hero-text h1 .first {
+  color: var(--primary);
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.9em;
+  background: var(--primary);
+  vertical-align: text-bottom;
+  margin-left: 3px;
+  animation: blink 1.1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.hero-text .title {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.hero-text p {
+  font-size: 0.94rem;
+  color: var(--text);
+  line-height: 1.85;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 56px;
+}
+
+.section h2 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--comment);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section h2::before {
+  content: "//";
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.section h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.section p {
+  font-size: 0.94rem;
+  color: var(--text);
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+.section p strong {
+  color: var(--text-emphasis);
+  font-weight: 600;
+}
+
+/* Highlights */
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.highlight {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--primary);
+  padding: 14px 18px;
+  border-radius: 0 6px 6px 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.highlight:hover {
+  background: var(--primary-hover-bg);
+  border-color: var(--primary-hover-border);
+  border-left-color: var(--primary);
+}
+
+.highlight-label {
+  font-size: 0.78rem;
+  color: var(--primary);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.highlight p {
+  font-size: 0.88rem;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.65;
+}
+
+.highlight p a {
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary-link-border);
+  transition: border-color 0.15s;
+}
+
+.highlight p a:hover {
+  border-bottom-color: var(--primary);
+}
+
+/* Contact */
+.contact-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--subtle);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.15s;
+}
+
+.contact-links a:hover {
+  color: var(--primary);
+}
+
+.contact-links a img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.hero-photo { animation: fadeUp 0.7s ease both; }
+.hero-text h1 { animation: fadeUp 0.7s 0.12s ease both; }
+.hero-text .title { animation: fadeUp 0.7s 0.22s ease both; }
+.hero-text p { animation: fadeUp 0.7s 0.32s ease both; }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .page {
+    flex-direction: column;
+    gap: 48px;
+    padding: 48px 28px 72px;
+  }
+
+  .hero {
+    flex-direction: row;
+    position: static;
+    width: 100%;
+    gap: 28px;
+    align-items: center;
+  }
+
+  .hero-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.55rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .page {
+    padding: 36px 20px 60px;
+    gap: 36px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-photo {
+    width: 110px;
+    height: 110px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.65rem;
+  }
+
+  .contact-links a {
+    min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo,
+  .hero-text h1,
+  .hero-text .title,
+  .hero-text p {
+    animation: none;
+    opacity: 1;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .cursor {
+    animation: none;
+  }
+}
