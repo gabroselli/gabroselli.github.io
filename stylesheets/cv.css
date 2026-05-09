@@ -177,6 +177,19 @@ body {
   font-weight: 600;
 }
 
+.section p a,
+.hero-text a {
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary-link-border);
+  transition: border-color 0.15s;
+}
+
+.section p a:hover,
+.hero-text a:hover {
+  border-bottom-color: var(--primary);
+}
+
 /* Highlights */
 .highlights {
   display: flex;
